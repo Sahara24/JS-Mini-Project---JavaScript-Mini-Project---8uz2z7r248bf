@@ -52,7 +52,7 @@ function draw() {
     document.getElementsByClassName("pop_up")[0].style.display = "flex";
     gameOn = false;
     let bgimg = document.getElementsByClassName("wrapper")[0];
-    bgimg.style.backgroundImage = "url(./images/aron-visuals-BXOXnQ26B7o-unsplash.jpg)"
+    bgimg.style.backgroundImage = "url(./images/drawn.jpg)"
   }
 }
 function restart() {
@@ -62,7 +62,7 @@ function restart() {
   })
   turn = "X";
   let bgimg = document.getElementsByClassName("wrapper")[0];
-  bgimg.style.backgroundImage = "url(./images/erwan-hesry-f6BON21ds9w-unsplash.jpg)"
+  bgimg.style.backgroundImage = "url(./images/won.jpg)"
   document.getElementsByClassName("info")[0].innerText = `${turn}-Turn`;
   document.getElementsByClassName("pop_up")[0].style.display = "none";
   gameOn = true;

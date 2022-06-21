@@ -102,6 +102,7 @@ body {
   /* border: 1px solid wheat; */
   display: flex;
   justify-content: center;
+  margin-top: 5rem;
 }
 #restart {
   margin-left: 3rem;
@@ -125,7 +126,7 @@ body {
   background: linear-gradient(to bottom, #668bab, #636363d4);
 }
 .wrapper {
-  margin: 2rem;
+  margin: 3rem;
   background-image: url(./images/erwan-hesry-f6BON21ds9w-unsplash.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -186,7 +187,7 @@ a:active {
   .game_container {
     display: grid;
     position: absolute;
-    top: 2rem;
+    top: 3rem;
   }
   .game_info {
     padding: 0;
@@ -203,5 +204,16 @@ a:active {
     height: 30rem;
     width: 20rem;
     margin: 2rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .game {
+    display: grid;
+    grid-template-columns: repeat(3, 16vw);
+    grid-template-rows: repeat(3, 16vw);
+  }
+  .game_container {
+    margin-top: 4rem;
   }
 }

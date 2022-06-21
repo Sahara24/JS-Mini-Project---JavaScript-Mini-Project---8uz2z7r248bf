@@ -35,10 +35,14 @@ function togglefn() {
     // toggle = false;
     //document.getElementById('displayVal').innerHTML = document.getElementById('displayVal').innerHTML = !document.getElementById('displayVal').innerHTML ? false : true;
     localStorage.setItem('theme', 'style.css');
+    let changeIcon = document.getElementById("changeTheme");
+    changeIcon.className = "fa-solid fa-moon";
   } else {
     theme.href = './darkTheme.css';
     //document.getElementById('displayVal').innerHTML = document.getElementById('displayVal').innerHTML = !document.getElementById('displayVal').innerHTML ? false : true;
     localStorage.setItem('theme', './darkTheme.css');
+    let changeIcon = document.getElementById("changeTheme");
+    changeIcon.className = "fa-solid fa-sun";
   }
 
 }

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculator</title>
+  <link rel="stylesheet" href="./style.css" id="theme" />
+
+  <script src="https://kit.fontawesome.com/9126b28605.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <main class="container">
+
+    <!-- <div class="top">
+      <div></div>
+    </div> -->
+    <div class="calculator">
+      <input type="input" id="input" placeholder="0" disabled />
+      <button id="clr" onclick="clrscr()">clr</button>
+      <button id="modulo" onclick="del()"><i class="fa-solid fa-delete-left"></i></button>
+      <button id="openBrace" onclick="togglefn()"><i class="fa-solid fa-moon"></i></button>
+      <button id="closeBrace" onclick="display('%')">%</button>
+      <button id="block7" onclick="display(7)">7</button>
+      <button id="block8" onclick="display(8)">8</button>
+      <button id="block9" onclick="display(9)">9</button>
+      <button id="multiply" onclick="display('*')">x</button>
+      <button id="block4" onclick="display(4)">4</button>
+      <button id="block5" onclick="display(5)">5</button>
+      <button id="block6" onclick="display(6)">6</button>
+      <button id="minus" onclick="display('-')">-</button>
+      <button id="block1" onclick="display(1)">1</button>
+      <button id="block2" onclick="display(2)">2</button>
+      <button id="block3" onclick="display(3)">3</button>
+      <button id="plus" onclick="display('+')">+</button>
+      <button id="block0" onclick="display(0)">0</button>
+      <button id="dot" onclick="display('.')">.</button>
+      <button id="ans" onclick="calculate()">=</button>
+      <button id="divide" onclick="display('/')">/</button>
+    </div>
+  </main>
+  <script src="./calci.js"></script>
+</body>
+
+</html>

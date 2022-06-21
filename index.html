@@ -1,1 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic Tac Toe</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script src="https://kit.fontawesome.com/9126b28605.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="calci-info">
+      <p>Need a Calculator, Click the calculator icon present at the bottom </p>
+    </div>
+    <div class="calci">
+      <a href="./calculator/index.html" target="_blank"><i class="fa-solid fa-calculator fa-6x"></i></a>
+    </div>
+    <div class="game_container">
+      <div class="game" id="board">
+        <div class="cell"><span class="boxtext"></span></div>
+        <div class="cell"><span class="boxtext"></span></div>
+        <div class="cell"><span class="boxtext"></span></div>
+        <div class="cell"><span class="boxtext"></span></div>
+        <div class="cell"><span class="boxtext"></span></div>
+        <div class="cell"><span class="boxtext"></span></div>
+        <div class="cell"><span class="boxtext"></span></div>
+        <div class="cell"><span class="boxtext"></span></div>
+        <div class="cell"><span class="boxtext"></span></div>
+      </div>
+      <div class="game_info">
+        <div class="game_name">TIC TAC TOE</div>
+        <div class="restart-info">
+          <span class="info">X-Turn</span>
+          <button id="restart" onclick=restart()><i class="fa-solid fa-arrows-rotate fa-lg"></i></button>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+  <div class="pop_up">
+    <div class="wrapper">
+      <div class="winning_msg">
+        <h1 class="msg"></h1>
+      </div>
+      <div>
+        <button onclick="restart()" class="btn">Play Again</button>
+      </div>
+    </div>
+  </div>
+  <script src="./App.js"></script>
+</body>
+
+</html>

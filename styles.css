@@ -1,1 +1,208 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,300&display=swap"); */
 
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+body {
+  background: #141e30; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #243b55,
+    #141e30
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #243b55, #141e30);
+}
+.container {
+  height: 100vh;
+  padding-top: 5rem;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  background: #141e30; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #243b55,
+    #141e30
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #243b55,
+    #141e30
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.game {
+  display: grid;
+  grid-template-columns: repeat(3, 9vw);
+  grid-template-rows: repeat(3, 9vw);
+}
+#turn {
+  grid-column: 1 / span 2;
+  text-align: start;
+}
+.cell {
+  margin: 2px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px;
+  background: #457fca; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #5691c8,
+    #457fca
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #5691c8,
+    #457fca
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  /* font-size: 5vw; */
+}
+.boxtext {
+  font-size: 6vw;
+  color: #0f2027;
+}
+.cell:hover {
+  background: #bdc3c7; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #2c3e50,
+    #bdc3c7
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #2c3e50,
+    #bdc3c7
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.game_info {
+  padding: 0 3rem;
+}
+.restart-info {
+  display: flex;
+  justify-content: center;
+}
+.info {
+  font-size: 2.8vw;
+  color: azure;
+  font-weight: 300;
+}
+.game_name {
+  text-align: center;
+  font-size: 4vw;
+  color: #abbaab;
+}
+.game_container {
+  /* border: 1px solid wheat; */
+  display: flex;
+  justify-content: center;
+}
+#restart {
+  margin-left: 3rem;
+  cursor: pointer;
+  color: #1a3a65;
+  font-size: 2vw;
+  width: 4.5vw;
+}
+.pop_up {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  text-align: center;
+  display: none;
+  align-items: center;
+  /* justify-content: center; */
+  flex-direction: column;
+  background: -webkit-linear-gradient(to bottom, #668bab, #636363d4);
+  background: linear-gradient(to bottom, #668bab, #636363d4);
+}
+.wrapper {
+  margin: 2rem;
+  background-image: url(./images/erwan-hesry-f6BON21ds9w-unsplash.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 20rem;
+  width: 30rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  transition-timing-function: ease-in-out;
+}
+.winning_msg {
+  margin: 0.8rem 0;
+  color: rgb(244, 217, 67);
+  font-size: 2.1rem;
+}
+.btn {
+  width: 130px;
+  height: 40px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(36, 124, 125);
+  color: cornsilk;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+.btn:hover {
+  background-color: green;
+  color: gold;
+}
+.calci {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  color: #f8fffdb2;
+  cursor: pointer;
+}
+a,
+a:visited,
+a:hover,
+a:active {
+  color: inherit;
+}
+.calci-info {
+  position: fixed;
+  top: 0;
+  color: #9095906d;
+}
+@media screen and (max-width: 800px) {
+  .game {
+    display: grid;
+    grid-template-columns: repeat(3, 14vw);
+    grid-template-rows: repeat(3, 14vw);
+  }
+  .game_container {
+    display: grid;
+    position: absolute;
+    top: 2rem;
+  }
+  .game_info {
+    padding: 0;
+    margin-top: 1rem;
+    position: relative;
+  }
+  #restart {
+    margin-right: 0rem;
+  }
+  .boxtext {
+    font-size: 9vw;
+  }
+  .wrapper {
+    height: 30rem;
+    width: 20rem;
+    margin: 2rem;
+  }
+}

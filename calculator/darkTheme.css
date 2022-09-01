@@ -13,7 +13,7 @@
   align-items: center;
 }
 .calculator {
-  background-color: #2e2d2d;
+  background-color: #232323;
   padding: 15px;
   border-radius: 30px;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
@@ -26,8 +26,10 @@ input {
   height: 70px;
   width: 260px;
   background-color: #3a3a44bd;
-  box-shadow: inset 5px 5px 12px #3e3e3f53,
-    inset -5px -5px 12px rgba(60, 60, 63, 0.448);
+  /* box-shadow: inset 5px 5px 12px #3e3e3f53,
+    inset -5px -5px 12px rgba(60, 60, 63, 0.448); */
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
   border: none;
   border-radius: 30px;
   color: rgba(226, 217, 217, 0.937);
@@ -56,3 +58,22 @@ button:hover {
                       5px 5px 12px rgba(255, 255, 255, 0.16); */
 /* box-shadow: -5px -5px 12px #121212,
                  5px 5px 12px rgba(255, 255, 255, 0.047); */
+.operations-btn {
+  background-color: #9d8fe192;
+  color: #c8c0eb;
+}
+.clear-btn {
+  background-color: rgba(252, 218, 21, 0.634);
+  font-weight: 520;
+}
+.del-btn,
+.theme-btn {
+  background-color: #b0ceeee4;
+}
+.fa-solid {
+  background-color: #9eb8d3d2;
+  color: #505153;
+}
+.equal-btn {
+  background-color: rgba(137, 43, 226, 0.805);
+}
